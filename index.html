@@ -11,25 +11,39 @@
     <main>
         <section>
             <div id="config">
-                <label for="dices">Nombre de dés :</label>
-                <input type="number" id="dices" name="dices" required>
+                <div>
+                    <label for="dices">Nombre de dés</label>
+                    <input id="dices" name="dices" value="1" required>
+                    <span id="error" style="color:red; display:none; font-weight: bold;">Saisie invalide</span>
+                </div>
 
-                <label for="diceType">Valeur du dé :</label>
-                <input type="number" id="diceType" name="diceType" required>
+                <div>
+                    <label for="diceType">Valeur du dé</label>
+                    <input id="diceType" name="diceType" value="6" required>
+                    <span id="error" style="color:red; display:none;font-weight: bold;">Saisie invalide</span>
+                </div>
 
-                <label for="importantDices">Dés conservés :</label>
-                <input type="number" id="importantDices" name="importantDices" required>
+                <div>
+                    <label for="importantDices">Dés conservé(s)</label>
+                    <input id="importantDices" name="importantDices" value="1" required>
+                    <span id="error" style="color:red; display:none;font-weight: bold;">Saisie invalide</span>
+                </div>
 
-                <label for="times">Nombre de lancer:</label>
-                <input type="number" id="times" name="times" required>
+                <div>
+                    <label for="times">Nombre de lancer(s)</label>
+                    <input id="times" name="times" maxlength="5" value="1" required>
+                    <span id="error" style="color:red; display:none;font-weight: bold;">Saisie invalide</span>
+                </div>
 
                 <form>
                     <div>
-                    <input type="radio" id="bonus" name="choice" />
-                    <label for="bonus">avantage</label>
+                        <input type="radio" id="bonus" name="choice" checked/>
+                        <label for="bonus">avantage</label>
+                    </div>
                 
-                    <input type="radio" id="malus" name="choice" />
-                    <label for="malus">désavantage</label>
+                    <div>
+                        <input type="radio" id="malus" name="choice" />
+                        <label for="malus">désavantage</label>
                     </div>
                 </form>
 

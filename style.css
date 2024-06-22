@@ -25,6 +25,31 @@ main {
     background-color: rgba(128, 128, 128, 0.596);
 }
 
+#config div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+#config form div {
+    display:flex;
+    flex-direction: row;
+}
+
+#config form div input {
+    width: auto;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border:none;
+    width: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
 #generate {
     cursor: pointer;
     width: 100%;
